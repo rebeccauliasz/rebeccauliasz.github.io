@@ -20,7 +20,7 @@
                                 <hr />
                                 <dl>
                                     <dt class="heading">Email</dt>
-                                    <dd>{{ .email }}</dd>
+                                    <dd><a href="mailto:{{ .email }}">{{ .email }}</a></dd>
                                 </dl>
                                 {{ if .telephone }}
                                 <dl>
@@ -35,7 +35,7 @@
                                 {{ if .office_hours }}
                                 <dl>
                                     <dt class="heading">Office Hours</dt>
-                                    <dd>{{ .office_hours }}</dd>
+                                    <dd>{{ .office_hours | safeHTML }}</dd>
                                 </dl>
                                 {{ end }}
                             </div>
