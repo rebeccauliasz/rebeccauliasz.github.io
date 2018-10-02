@@ -39,12 +39,23 @@ Demo:  https://mjvo.github.io/course-stub
     
 
 
-### Publishing site to gh-pages
+### Publishing site to gh-pages   
+https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
-1.  Once site is configured, make sure that your online repo is up-to-date using Github Desktop or via command line:
+1.  Once site is configured, make sure that your online repo is up-to-date using Github Desktop or via command line.
+
+2. Double-check that you don't have any uncommitted changes.  Commit them and push local repo to remote.
+
+    The next step (specifically the `git reset --hard`) will DELETE any changes.  BE CAREFUL!
+
+3.  cd into your local repo and run the following commands:
 
     ```
-    git push origin master
+    git checkout --orphan gh-pages
+    git reset --hard
+    git commit --allow-empty -m "Initializing gh-pages branch"
+    git push origin gh-pages
+    git checkout master
     ```
 
-2. 
+
