@@ -21,6 +21,10 @@ outputFormats:
     baseName: index
     mediaType: text/html
     isHTML: true
+  Remark:
+    baseName: index
+    mediaType: text/html
+    isHTML: true
 
 params:
   course:
@@ -34,7 +38,7 @@ params:
 
   reveal_hugo:
     theme: white
-    
+  
     width: 960
     height: 540
     margin: 0.1

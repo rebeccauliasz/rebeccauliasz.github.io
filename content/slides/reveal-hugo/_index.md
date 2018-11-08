@@ -87,7 +87,6 @@ Internet
 <cite>- Author</cite>
 
 ---
-{{< slide template="fish" >}}
 
 * This is a sentence
 * This is a sentence that is longer
