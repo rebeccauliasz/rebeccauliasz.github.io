@@ -7,13 +7,14 @@ outputs: "Remark"
 description: "Story's Remark frameworks help you create sophisticated slides with simple, clean Markdown. There are predefined layouts for most presentation needs, beautiful typography and colors, precise image control, and a simple modular way to create custom layouts."
 
 # remarkJS parameters
-ratio: "16:9"
+ratio: "16:9" #"4:3"
 themes:
 - apron
 - descartes
 - adirondack
 classes:
 - feature-math
+- feature-qrcode
 highlight_style: "atom-one-dark"
 ---
 class: title, smokescreen, shelf, no-footer
@@ -27,7 +28,7 @@ background-image: url(leo-serrat-533922-unsplash.jpg)
 
 [Story](https://github.com/xaprb/story) offers helper themes for creating
 beautiful presentations with [Remark](https://remarkjs.com/), using simple
-Markdown to create slide layouts.
+Markdown to create slide layouts. 1/3
 
 - Apron defines the layouts' structure and size.
 - Adirondack adds typography, theme colors, and helpful features.
@@ -402,7 +403,7 @@ screen.
 Just enable the `feature-qrcode` [flag](/features/) and add markup like the
 following to your slide:
 
-```
+```css
 .qrcode.db.fr.w-40pct.ml-4[]
 ```
 
@@ -438,7 +439,7 @@ class: compact
 This slide builds on content from the previous (hidden, layout) slide, whose
 content is:
 
-```
+```md
 ---
 layout: true
 .footer[
@@ -481,7 +482,7 @@ Markdown.  It uses composable, functional pseudo-classes in the image's URL
 fragment (the part after the `#` character). For example, this image will be 33% width,
 display as block, 2rem right margin, and float left: 
 
-```
+```md
 ![Image](tom-barrett-364228-unsplash.jpg# w-33pct db fl mr-4)
 ```
 
@@ -545,7 +546,7 @@ previous slide.
 
 These can be applied as classes to a DIV, or image pseudo-classes:
 
-```
+```md
 .w-50pct.h-1-12th.t-0.l-50pct[....]
 ![img](pic.jpg# w-50pct h-1-12th t-0 l-50pct)
 ```
