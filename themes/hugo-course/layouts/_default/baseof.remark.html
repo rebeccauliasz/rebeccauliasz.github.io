@@ -19,11 +19,11 @@
     {{- if not (or (in .Site.Params.classes "feature-nomath") (in .Params.classes "feature-nomath") ) -}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
-  <script src="{{ "remark/js/auto-render.min.js" | absURL }}"></script> <!-- for KaTeX -->
+  <script src="{{ "remark/js/auto-render.min.js" | relURL }}"></script> <!-- for KaTeX -->
     {{- end -}}
   {{- end -}}
-    <script src="{{ "remark/js/auto-render.min.js" | absURL }}"></script> <!-- for KaTeX -->
-    <script src="{{ "remark/js/story.js" | absURL }}"></script>
+    <script src="{{ "remark/js/auto-render.min.js" | relURL }}"></script> <!-- for KaTeX -->
+    <script src="{{ "remark/js/story.js" | relURL }}"></script>
   </head>
   <body class="ma0 bg-white {{ with .Section }}section-{{ . }}{{ end }} page-kind-{{ .Kind }} is-page-{{ .IsPage }} {{ with .Site.Params.classes }}{{ range . }} {{ . }}{{ end }}{{ end }}{{ with .Params.classes }}{{ range . }} {{ . }}{{ end }}{{ end }}">
     <main role="main">
