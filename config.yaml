@@ -46,5 +46,6 @@ params:
     max_scale: 1
 
     highlight_theme: "atom-one-dark"
-    menu:
-      open_button: false
+    
+    #plugins: 
+    #  - "reveal-js/plugin/menu/menu.js"

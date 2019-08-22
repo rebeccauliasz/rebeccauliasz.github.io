@@ -14,6 +14,7 @@ reveal_hugo:
             background-image: "https://source.unsplash.com/nI3bUW1Xqik/420x600"
             background-size: "50%"
             state: "opacity50"
+    plugins: ["reveal-js/plugin/menu/menu.js"]
 ---
 # title
 ---
