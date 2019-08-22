@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
     <!-- Theme used for presentation -->
     {{ block "layout" . }}{{ end }}
     <!-- Theme used for syntax highlighting of code -->
@@ -19,7 +19,7 @@
     {{- if not (or (in .Site.Params.classes "feature-nomath") (in .Params.classes "feature-nomath") ) -}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
-  <script src="{{ "js/auto-render.min.js" | absURL }}"></script> <!-- for KaTeX -->
+  <script src="{{ "remark/js/auto-render.min.js" | absURL }}"></script> <!-- for KaTeX -->
     {{- end -}}
   {{- end -}}
     <script src="{{ "remark/js/auto-render.min.js" | absURL }}"></script> <!-- for KaTeX -->
