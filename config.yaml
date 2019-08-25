@@ -38,7 +38,6 @@ params:
 
   reveal_hugo:
     theme: white
-  
     width: 960
     height: 540
     margin: 0.1
@@ -46,5 +45,5 @@ params:
     max_scale: 1
 
     highlight_theme: "atom-one-dark"
-    menu:
-      open_button: false
+    #plugins:
+    #  - ["reveal-js/plugin/menu/menu.js"]

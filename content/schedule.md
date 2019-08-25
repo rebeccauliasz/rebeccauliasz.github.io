@@ -10,7 +10,7 @@ menu: "main"
 
 Reading:
 
-* one
+* one 1/2
 * two
 * three
 

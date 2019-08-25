@@ -25,7 +25,7 @@
     <textarea id="source">
 			{{- .RawContent -}}
     </textarea>
-
+		<script type="text/javascript" src="{{ "remark/js/qrcode.js" | absURL }}"></script>
     <script src="{{ "remark/js/remark-latest.min.js" | absURL }}"></script>
     <script>
       var slideshow = remark.create({
@@ -53,6 +53,15 @@
 			}
 			if ( needsToggle ) $p.toggleClass('remark-visible');
 		});
-	
+		$( function() {
+			if ( $( "body.feature-qrcode:not(.feature-noqrcode)" ).length ) {
+				if ( $( ".qrcode" ).length ) {
+					new QRCode($(".qrcode")[0], {
+						"useSVG": true,
+						"text": window.location.href.replace(/#\d*$/, "")
+					});
+				}
+			}
+		});
     </script>
 {{ end }}
