@@ -25,7 +25,7 @@
     <script src="{{ "remark/js/auto-render.min.js" | relURL }}"></script> <!-- for KaTeX -->
     <script src="{{ "remark/js/story.js" | relURL }}"></script>
   </head>
-  <body class="ma0 bg-white {{ with .Section }}section-{{ . }}{{ end }} page-kind-{{ .Kind }} is-page-{{ .IsPage }} {{ with .Site.Params.classes }}{{ range . }} {{ . }}{{ end }}{{ end }}{{ with .Params.classes }}{{ range . }} {{ . }}{{ end }}{{ end }}">
+  <body class=" {{ with .Section }}section-{{ . }}{{ end }} page-kind-{{ .Kind }} is-page-{{ .IsPage }} {{ with .Site.Params.classes }}{{ range . }} {{ . }}{{ end }}{{ end }}{{ with .Params.classes }}{{ range . }} {{ . }}{{ end }}{{ end }}">
     <main role="main">
       {{ block "main" . }}
       {{ end }}
