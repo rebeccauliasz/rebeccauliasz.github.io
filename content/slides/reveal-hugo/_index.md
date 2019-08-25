@@ -1,6 +1,6 @@
 ---
 title: 'Demo RemarkJS Slideshow '
-date: "2018-06-02T16:43:02-04:00"
+date: "2019-06-02T16:43:02-04:00"
 outputs: "Reveal"
 
 cover_img: "nathan-anderson-99542-unsplash.jpg" # same dir as slideshow

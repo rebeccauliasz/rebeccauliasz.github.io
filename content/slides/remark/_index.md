@@ -1,6 +1,6 @@
 ---
 title: 'Story Remark Sample'
-date: "2018-04-25T09:50:00-07:00"
+date: "2019-04-25T09:50:00-07:00"
 cover_img: "leo-serrat-533922-unsplash.jpg"
 outputs: "Remark"
 
